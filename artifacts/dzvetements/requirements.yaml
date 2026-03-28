@@ -1,0 +1,22 @@
+packages:
+  "framer-motion": "For page transitions and smooth micro-interactions"
+  "react-hook-form": "For robust form handling in Sell and Checkout pages"
+  "@hookform/resolvers": "Zod validation resolver for forms"
+  "zod": "Schema validation for forms"
+  "date-fns": "For formatting dates in reviews and products"
+  "uuid": "For generating unique cart session IDs"
+  "embla-carousel-react": "For beautiful touch-friendly product image carousels"
+  "@types/uuid": "Types for uuid"
+
+images:
+  - path: "artifacts/dzvetements/public/images/hero-pattern.png"
+    description: "Subtle abstract geometric pattern inspired by North African and Algerian zellige tile art, warm terracotta and soft sand colors, low opacity, perfect for a modern web background"
+    aspect_ratio: "16:9"
+  - path: "artifacts/dzvetements/public/images/auth-bg.png"
+    description: "Fashion editorial style abstract background with soft flowing fabrics in deep green and gold tones, moody lighting"
+    aspect_ratio: "9:16"
+
+notes:
+  - Using generated Orval hooks from @workspace/api-client-react
+  - Cart relies on a local sessionStorage UUID to identify anonymous users
+  - Currency is DZD (Algerian Dinar)

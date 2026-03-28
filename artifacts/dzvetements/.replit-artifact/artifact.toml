@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "DzVêtements - Fashion Marketplace"
+version = "1.0.0"
+id = "artifacts/dzvetements"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21632
+
+[services.development]
+run = "pnpm --filter @workspace/dzvetements run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/dzvetements", "run", "build" ]
+publicDir = "artifacts/dzvetements/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21632"
+BASE_PATH = "/"
