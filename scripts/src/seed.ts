@@ -552,7 +552,16 @@ const reviews = [
 ];
 
 async function seed() {
-  console.log("🌱 Seeding database...");
+  const seedMode = process.env.SEED_MODE === "bootstrap" ? "bootstrap" : "reset";
+  console.log(`🌱 Seeding database in ${seedMode} mode...`);
+
+  if (seedMode === "bootstrap") {
+    const existing = await db.select().from(productsTable).limit(1);
+    if (existing.length > 0) {
+      console.log("Bootstrap seed skipped; products already present");
+      return;
+    }
+  }
 
   console.log("Inserting sellers...");
   const insertedSellers = await db.insert(sellersTable).values(sellers).returning();
