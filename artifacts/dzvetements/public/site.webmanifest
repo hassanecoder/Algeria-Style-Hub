@@ -1,0 +1,21 @@
+{
+  "name": "DzVêtements",
+  "short_name": "DzVêtements",
+  "description": "Shop trendy fashion and clothing in Algeria. Discover traditional and modern Algerian fashion, shoes, accessories, and designer brands. DzVêtements — Algeria's fashion marketplace.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#9333EA",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ]
+}
