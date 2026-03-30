@@ -47,8 +47,8 @@ export default function Sell() {
   const handleAddImage = () => {
     // In a real app, this would be a file input uploading to S3/Cloudinary
     const mockImages = [
-      "https://images.unsplash.com/photo-1578587018452-892bace03529?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1550614000-4b95d4ebfa88?auto=format&fit=crop&q=80&w=800"
+      "https://images.unsplash.com/photo-1558171813-4c088753af8f?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=800"
     ];
     if (images.length < 4) {
       setImages([...images, mockImages[images.length % 2]]);

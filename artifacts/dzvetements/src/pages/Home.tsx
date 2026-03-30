@@ -21,7 +21,7 @@ export default function Home() {
   const categories = [
     { name: "Femmes", image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=800" },
     { name: "Hommes", image: "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=800" },
-    { name: "Traditionnel", image: "https://images.unsplash.com/photo-1596455607563-ad6193f78b78?auto=format&fit=crop&q=80&w=800" },
+    { name: "Traditionnel", image: "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&q=80&w=800" },
     { name: "Accessoires", image: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800" },
   ];
 
